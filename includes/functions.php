@@ -6,9 +6,9 @@
     // then we should retrieve the row of data that matches and pass it back to the app
     function getProfData($conn, $prof) {
         if (is_null($prof)){
-            $query = "SELECT * FROM profs";   
+            $query = "SELECT * FROM tbl_cardata";   
         } else {
-            $query = "SELECT * FROM profs WHERE id='".$prof."'";
+            $query = "SELECT * FROM tbl_cardata WHERE id='".$prof."'";
         }
         // this is the database result -> the raw data that SQL gives us
         $runQuery = $conn->query($query);

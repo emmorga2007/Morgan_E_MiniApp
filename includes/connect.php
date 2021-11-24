@@ -1,7 +1,7 @@
 <?php 
     $db_dsn = array( 
         'host' => 'localhost', // this will point to your domain name for FIP
-        'dbname' => 'db_profdata', // update this with your database name
+        'dbname' => 'db_MiniApp', // update this with your database name
         'charset' => 'utf8'
     );
 
