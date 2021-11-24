@@ -24,10 +24,10 @@ export default {
         <component v-if="piece.mediaType" :is="activeComponent"></component>
 
         <div>
-            <h1>Name : {{piece.Name}}</h1>
-            <p>Role : {{piece.Role}}</p>
-            <p>Nickname : {{piece.Nickname}}</p>
-            <img :src='"images/" + piece.biopic' :alt="piece.name"></img>
+            <h1>Name : {{piece.FullName}}</h1>
+            <p>Role : {{piece.Lease}}</p>
+            <p>Nickname : {{piece.Finance}}</p>
+            <img :src='"images/" + piece.MainPic' :alt="piece.name"></img>
         </div>
 
     </section>
