@@ -1,4 +1,4 @@
-<img src="images/logo.png" alt="MINI Logo">
+
 
 # MINI COOPER CANADA 
 
