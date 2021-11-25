@@ -1,8 +1,33 @@
 .bio-panel {
     display: inline-block;
+    width: 23vw;
     margin: 10px;
+    
 
-    .p_name {
-        color: blue;
+    .bio-text {
+        color: black;
+        text-transform: uppercase;
+        display: flex;
+        flex-direction: column;
+        .p_name {
+            display: flex;
+            justify-content: center;
+            weight: bold;
+        }
+        h3 {
+            display: flex;
+            justify-content: center;
+        }
+        img{
+            width: 1.5rem;
+            cursor: pointer;
+        }
+    }
+
+    .p_avatar img {
+        width:20vw ;
+        padding: 20%;
+        display: flex;
+        justify-content: center;
     }
 }
