@@ -1,5 +1,4 @@
-import TheAudioComponent from "./TheAudioComponent";
-import TheVideoComponent from "./TheVideoComponent";
+
 
 
 export default {
@@ -8,26 +7,37 @@ export default {
     
     props: ["piece"] ,
 
-    computed: {
-        activeComponent: function (){
-            return `${this.piece.mediaType + "Component"}`;
-        }
-    },
-
     template: 
     `
     <section class="lightboxWrapper">
-        <!--<pre>{{piece}}</pre> this shows the .json object of database reutrn-->
-       
-        <i @click="closeMe" class="fa-solid fa-circle-xmark"></i>
-        <h1>Type of Media : {{piece.mediaType}}</h1>
-        <component v-if="piece.mediaType" :is="activeComponent"></component>
-
         <div>
-            <h1>Name : {{piece.FullName}}</h1>
-            <p>Role : {{piece.Lease}}</p>
-            <p>Nickname : {{piece.Finance}}</p>
-            <img :src='"images/" + piece.MainPic' :alt="piece.name"></img>
+            <h1>{{piece.FullName}}</h1>
+
+            <div class="car-info">
+
+                <div class="engine">
+                    <h4>Engine Architecture</h4>
+                    <p>{{piece.Engine}}</p>
+                </div>
+
+                <div>
+                    <div class="apr-info">
+                        <h3>Lease {{piece.Lease}}</h3>
+                        <p>APR</p>
+                    </div>
+                    <div class="apr-info">
+                        <h3>Finance {{piece.Finance}}</h3>
+                        <p>APR</p>
+                    </div>
+                </div>
+                
+
+            </div>
+                
+
+        </div>
+        <div>
+        <img :src='"images/" + piece.MainPic' :alt="piece.name"></img>
         </div>
 
     </section>
@@ -40,10 +50,7 @@ export default {
         }
     },
 
-    components: {
-        AudioComponent: TheAudioComponent,
-        VideoComponent: TheVideoComponent
-    }
+
 
 
 }

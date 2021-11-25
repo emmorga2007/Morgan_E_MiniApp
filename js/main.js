@@ -3,6 +3,8 @@ import TheThumbnail from "./components/TheThumbnail.js";
 import LightboxComponent from "./components/TheLightboxComponent.js";
 
 (() => {
+
+
     const myVue = new Vue({
         created: function() {
             // this is retrieving portfolio stuff from the database 
@@ -35,6 +37,8 @@ import LightboxComponent from "./components/TheLightboxComponent.js";
         }
 
     }).$mount("#app");
+
+
     
 
 
