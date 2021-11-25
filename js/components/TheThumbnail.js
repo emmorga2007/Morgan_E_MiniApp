@@ -12,7 +12,7 @@ export default {
         <div class="bio-text">
             <h2 class="p_name">{{ piece.Name }}</h2> 
             <h3 cass="p-role">View Details</h3>
-            <img src="images/arrow.png" alt="arrow">
+            <img  id="shake-image" class="face" src="images/arrow.png" alt="arrow">
         </div>
     </div>
     `,

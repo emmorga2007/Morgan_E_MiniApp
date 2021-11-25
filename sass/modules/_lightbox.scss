@@ -1,7 +1,48 @@
+
+.lightboxWrapper{
+    .car-info{
+        display: flex;
+        flex-direction: row;
+        .engine{
+            p{
+             text-wrap: wrap;
+            }
+        }
+    }
+
+    h1{
+        font-size: 2.8rem;
+        padding: 50px 0px 25px 0px;
+    }
+    img{
+        width: 50vw;
+        padding-top: 50px;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+    .apr-info{
+        display: flex;
+        flex-direction: row;
+        padding: 1.3rem;
+        justify-content: center;
+        h3{
+            font-size: 1.4rem;
+        }
+        p{
+            font-size: 0.5rem;
+            display: flex;
+            align-items: flex-end;
+        }
+    }
+}
+
 .lightbox {
     display: none;
 }
 
 .visible {
-    display: block !important;
+    display: flex !important;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
+

@@ -11,17 +11,24 @@
         flex-direction: column;
         .p_name {
             display: flex;
+            font-size: 1.5rem;
+            font-weight: bold;
             justify-content: center;
             weight: bold;
+            padding: 10px 0px 15px 0;
         }
         h3 {
+            font-size: 0.8rem;
+            font-weight: bold;
             display: flex;
             justify-content: center;
         }
         img{
-            width: 1.5rem;
+            width: 2.5rem;
             cursor: pointer;
+            padding: 0 53% 0 47%;
         }
+        
     }
 
     .p_avatar img {
