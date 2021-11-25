@@ -15,29 +15,40 @@ export default {
 
             <div class="car-info">
 
-                <div class="engine">
-                    <h4>Engine Architecture</h4>
-                    <p>{{piece.Engine}}</p>
-                </div>
+                    <div class="price-con">
+                        <p>All-Inclusive Price: {{piece.Price}}</p>
+                    </div>
+                    
+                    <div class="apr-container">
+                        <div class="LVF">
+                            <h3>Lease</h3>
 
-                <div>
-                    <div class="apr-info">
-                        <h3>Lease {{piece.Lease}}</h3>
-                        <p>APR</p>
+                            <div class="apr-info">
+                                <h4>{{piece.Lease}}</h4>
+                                <p>APR</p>
+                            </div>
+
+                        </div>
+                        <div class="LVF">
+                            <h3>Finance</h3>
+
+                            <div class="apr-info">
+                                <h4>{{piece.Finance}}</h4>
+                                <p>APR</p>
+                            </div>
+
+                        </div>
                     </div>
-                    <div class="apr-info">
-                        <h3>Finance {{piece.Finance}}</h3>
-                        <p>APR</p>
-                    </div>
-                </div>
-                
+
 
             </div>
-                
-
         </div>
         <div>
-        <img :src='"images/" + piece.MainPic' :alt="piece.name"></img>
+            <img :src='"images/" + piece.MainPic' :alt="piece.name"></img>
+            <div>
+            <button>BOOK A TEST DRIVE</button>
+            <button>VIEW INVENTORY</button>
+            </div>
         </div>
 
     </section>

@@ -1,13 +1,36 @@
 
 .lightboxWrapper{
     .car-info{
-        display: flex;
-        flex-direction: row;
-        .engine{
-            p{
-             text-wrap: wrap;
+        display:flex;
+        flex-direction: column;
+        .price-con{
+            font-size: 1.9rem;
+            display: flex;
+            justify-content: center;
+        }
+        .apr-container{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            .LVF{
+                padding-top: 2rem;
+            }
+            h3{
+                padding: 25% 0 25% 0;
+                font-size: 1.6rem;
+            }
+            .apr-info{
+                display: flex;
+                flex-direction: row;
+                padding: 25% 0 25% 0;
+                p{
+                    font-size: 0.5rem;
+                    display: flex;
+                    align-items: flex-end;
+                }
             }
         }
+
     }
 
     h1{
@@ -20,20 +43,7 @@
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
     }
-    .apr-info{
-        display: flex;
-        flex-direction: row;
-        padding: 1.3rem;
-        justify-content: center;
-        h3{
-            font-size: 1.4rem;
-        }
-        p{
-            font-size: 0.5rem;
-            display: flex;
-            align-items: flex-end;
-        }
-    }
+      
 }
 
 .lightbox {
